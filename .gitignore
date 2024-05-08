@@ -9,6 +9,12 @@
 /[Bb]uilds/
 /[Ll]ogs/
 /[Uu]ser[Ss]ettings/
+[Dd]ocs/
+AnimationExport/
+SwitchIL2CPPCache/
+SwitchIL2CPPStats/
+External/
+Assets/AssetStoreTools*
 
 # MemoryCaptures can get excessive in size.
 # They also could contain extremely sensitive data
@@ -47,6 +53,10 @@ ExportedObj/
 *.opendb
 *.VC.db
 
+#Addressable Content States
+*addressables_content_state.bin
+*addressables_content_state.bin.meta
+
 # Unity3D generated meta files
 *.pidb.meta
 *.pdb.meta
@@ -63,10 +73,44 @@ sysinfo.txt
 
 # Crashlytics generated file
 crashlytics-build.properties
+# Never ignore DLLs in the FMOD subfolder.
+!/[Aa]ssets/Plugins/FMOD/**/lib/*
 
 # Packed Addressables
 /[Aa]ssets/[Aa]ddressable[Aa]ssets[Dd]ata/*/*.bin*
 
+# Don't ignore images and gizmos used by FMOD in the Unity Editor.
+!/[Aa]ssets/Gizmos/FMOD/*
+!/[Aa]ssets/Editor Default Resources/FMOD/*
+
+# Don't ignore FMOD builds.
+!/FMOD/Build/
+
+# Ignore the Cache folder since it is updated locally.
+/[Aa]ssets/Plugins/FMOD/Cache/*
+
+# Ignore bank files in the StreamingAssets folder.
+/[Aa]ssets/StreamingAssets/**/*.bank
+/[Aa]ssets/StreamingAssets/**/*.bank.meta
+
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+
+# If the source bank files are kept outside of the StreamingAssets folder then these can be ignored.
+# Log files can be ignored.
+fmod_editor.log
+
+# Packed Addressables
+/[Aa]ssets/[Aa]ddressable[Aa]ssets[Dd]ata/*/*.bin*
+
+# Ignore FMOD Cache subdirectories
+/FMOD/.cache/
+/FMOD/.user/
+/FMOD/.unsaved/
+
+/[Aa]ssets/LevelPreviewExports*
+/[Aa]ssets/Heatmaps*
+Assets/AddressableAssetsData/link.xml
+Assets/AddressableAssetsData/link.xml.meta
+.vsconfig
