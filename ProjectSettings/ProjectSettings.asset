@@ -137,7 +137,7 @@ PlayerSettings:
   vulkanEnableLateAcquireNextImage: 0
   vulkanEnableCommandBufferRecycling: 1
   loadStoreDebugModeEnabled: 0
-  bundleVersion: 0.0.0
+  bundleVersion: 0.0.10
   preloadedAssets: []
   metroInputSource: 0
   wsaTransparentSwapchain: 0
@@ -823,7 +823,7 @@ PlayerSettings:
     PS4: DOTWEEN
     PS5: DOTWEEN
     QNX: DOTWEEN
-    Standalone: DISABLESTEAMWORKS;DOTWEEN
+    Standalone: DISABLESTEAMWORKS
     WebGL: DOTWEEN
     Windows Store Apps: DOTWEEN
     XboxOne: DOTWEEN
