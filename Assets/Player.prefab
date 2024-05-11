@@ -69,6 +69,8 @@ GameObject:
   m_Component:
   - component: {fileID: 9069956154515507677}
   - component: {fileID: 1751777477787393948}
+  - component: {fileID: 7539296322598266203}
+  - component: {fileID: 1597311690397034414}
   m_Layer: 7
   m_Name: Arms
   m_TagString: Untagged
@@ -105,10 +107,56 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 292c0a3d832ab854fb04a7b2226d8f30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  body: {fileID: 0}
-  rb: {fileID: 0}
+  body: {fileID: 3844658943007591024}
+  rb: {fileID: 7539296322598266203}
   offset: 0
   rotationLock: 75
+--- !u!50 &7539296322598266203
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2597548773904959030}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 0
+--- !u!255 &1597311690397034414
+FixedJoint2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2597548773904959030}
+  m_Enabled: 1
+  serializedVersion: 4
+  m_EnableCollision: 0
+  m_ConnectedRigidBody: {fileID: 2869872449288275258}
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_BreakAction: 1
+  m_AutoConfigureConnectedAnchor: 0
+  m_Anchor: {x: 0, y: 0}
+  m_ConnectedAnchor: {x: 0, y: 0.333333}
+  m_DampingRatio: 0
+  m_Frequency: 0
 --- !u!1 &4282926346515855683
 GameObject:
   m_ObjectHideFlags: 0
@@ -321,7 +369,7 @@ GameObject:
   - component: {fileID: 7979833079719545531}
   m_Layer: 6
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -334,7 +382,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5593910525640698025}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -468,6 +516,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   brain: {fileID: 6506018907571611139}
   rb: {fileID: 2869872449288275258}
+  left_limb: 0
+  right_limb: 0
 --- !u!114 &7979833079719545531
 MonoBehaviour:
   m_ObjectHideFlags: 0
