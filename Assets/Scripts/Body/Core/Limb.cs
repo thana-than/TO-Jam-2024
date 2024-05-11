@@ -7,6 +7,13 @@ public abstract class Limb : MonoBehaviour
     protected Thorax thorax => joint.thorax;
     public bool invert = false;
 
+    public enum Type
+    {
+        expando,
+        wing,
+        grip
+    }
+
     public bool Active
     {
         get

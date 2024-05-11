@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2097004563866498045}
   - component: {fileID: 8193320147613218811}
   - component: {fileID: 7794133493975038013}
+  - component: {fileID: 6532586731418396382}
   m_Layer: 7
   m_Name: Limb Expander
   m_TagString: Untagged
@@ -93,6 +94,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   invert: 0
+  type: 0
   evaluationCurve:
     serializedVersion: 2
     m_Curve:
@@ -126,6 +128,19 @@ MonoBehaviour:
   on_size: {x: 4, y: 1}
   force_direction_amplifier: 50
   force_surface_amplifier: 50
+--- !u!114 &6532586731418396382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4207008057451997599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 370222a0a6ceb834f8873ca339ba042a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
 --- !u!1 &7273984647533661492
 GameObject:
   m_ObjectHideFlags: 0

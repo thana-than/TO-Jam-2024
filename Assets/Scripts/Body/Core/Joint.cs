@@ -24,11 +24,52 @@ public class Joint : MonoBehaviour
     {
         input = body.brain.GetLimbInput(part);
         input.onHeldChange += OnLimbAction;
+        body.onLimbChanged += OnLimbChanged;
     }
+
+
 
     void OnDisable()
     {
         input.onHeldChange -= OnLimbAction;
+        body.onLimbChanged -= OnLimbChanged;
+    }
+
+    LimbData GetLimbPrefab(Limb.Type limbType)
+    {
+        LimbTable table = ServiceLocator.Instance.Get<LimbTable>();
+        return table.limbs[limbType];
+    }
+
+    void CreateLimb(Limb.Type limbType)
+    {
+        GameObject.Instantiate(GetLimbPrefab(limbType), transform);
+    }
+
+    void TrySwapLimb(Limb.Type limbType)
+    {
+        LimbData limb = GetComponentInChildren<LimbData>();
+        bool limbExists = limb;
+
+        bool limbDestroy = limbExists && limb.type != limbType;
+
+        if (limbDestroy)
+            GameObject.Destroy(limb.gameObject);
+
+        if (!limbExists || limbDestroy)
+            CreateLimb(limbType);
+    }
+
+    void OnLimbChanged()
+    {
+        if (part == Joint.Part.LeftArm)
+        {
+            TrySwapLimb(body.left_limb);
+        }
+        else if (part == Joint.Part.RightArm)
+        {
+            TrySwapLimb(body.right_limb);
+        }
     }
 
     private void OnLimbAction(bool action)

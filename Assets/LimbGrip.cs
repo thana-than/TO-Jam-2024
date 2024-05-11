@@ -23,12 +23,12 @@ public class LimbGrip : Limb
             return;
         }
 
+        //TODO layermasking
         var hit = Physics2D.CircleCast(transform.TransformPoint(grabbyJoint.anchor), radius, transform.right, .1f);
 
         Debug.DrawRay(transform.TransformPoint(grabbyJoint.anchor), transform.right * .1f, Color.red, 1);
         if (!hit)
             return;
-        Debug.Log(hit);
 
         grabbyJoint.enabled = true;
         grabbyJoint.autoConfigureConnectedAnchor = true;
