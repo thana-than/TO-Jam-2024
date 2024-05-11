@@ -6,7 +6,8 @@ using System;
 
 public class Joint : MonoBehaviour
 {
-    public Body body;
+    public Thorax thorax;
+    public Body body => thorax.body;
 
     public enum Part { LeftArm = -1, RightArm = 1 }
     public Part part;

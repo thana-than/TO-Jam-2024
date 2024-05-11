@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3967614530024849213}
   - component: {fileID: 1116223002135801869}
+  - component: {fileID: 7804939835615446328}
   m_Layer: 7
   m_Name: Limb Wing
   m_TagString: Untagged
@@ -25,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1935485597002419659}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.38268343, w: 0.92387956}
+  m_LocalRotation: {x: 0, y: 0, z: 0.38268346, w: 0.9238795}
   m_LocalPosition: {x: -0.6, y: 0, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0}
   m_ConstrainProportionsScale: 0
@@ -75,7 +76,20 @@ MonoBehaviour:
   on_speed: 10
   startRot: 45
   endRot: -45
-  force: {x: -1, y: 3}
+--- !u!114 &7804939835615446328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1935485597002419659}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a641e3c09a410e84da163c39a5041d99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  invert: 0
+  force: {x: -1, y: 10}
 --- !u!1 &2393281392598416460
 GameObject:
   m_ObjectHideFlags: 0

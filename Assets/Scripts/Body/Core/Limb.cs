@@ -4,6 +4,7 @@ public abstract class Limb : MonoBehaviour
 {
     protected Joint joint;
     protected Body body => joint.body;
+    protected Thorax thorax => joint.thorax;
     public bool invert = false;
 
     public bool Active

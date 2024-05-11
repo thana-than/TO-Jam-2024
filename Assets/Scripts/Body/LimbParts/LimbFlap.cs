@@ -1,24 +1,13 @@
 using UnityEngine;
 
-public class LimbWing : EvaluatedLimb
+public class LimbFlap : EvaluatedLimb
 {
     public float startRot = 45;
     public float endRot = -45;
 
-    public Vector2 force = new Vector2(0, 10);
-
     protected override void LimbFixedUpdate(float evaluation)
     {
         Evaluate(evaluation);
-    }
-
-    protected override void OnLimbAction(bool active)
-    {
-        if (active)
-        {
-            Vector2 f = transform.TransformVector(force * joint.Axis_Multiplier);
-            body.rb.AddForce(f, ForceMode2D.Impulse);
-        }
     }
 
     void Evaluate(float evaluation)

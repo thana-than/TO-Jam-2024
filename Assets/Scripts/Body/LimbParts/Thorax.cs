@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using Than.Input;
 
-public class LimbRotator : MonoBehaviour
+public class Thorax : MonoBehaviour
 {
-    Brain brain;
+    Brain brain => body.brain;
+    public Body body;
+    public Rigidbody2D rb;
 
     float rotation = 0;
     public float offset = -90;
@@ -13,7 +15,7 @@ public class LimbRotator : MonoBehaviour
 
     void Start()
     {
-        brain = GetComponentInParent<Brain>();
+        rb.centerOfMass = Vector2.zero;
     }
 
     void Update()
