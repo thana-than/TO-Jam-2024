@@ -122,6 +122,17 @@
                 },
                 {
                     "name": "",
+                    "id": "7ab1b910-c7de-4245-b13a-f47b17cc819c",
+                    "path": "<Mouse>/position",
+                    "interactions": "",
+                    "processors": "LocalMouse",
+                    "groups": "Keyboard",
+                    "action": "Look",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "a3e564a6-4bbf-41f3-82c7-e624edd27cfd",
                     "path": "<Gamepad>/rightTrigger",
                     "interactions": "",
@@ -133,11 +144,33 @@
                 },
                 {
                     "name": "",
+                    "id": "cfab7889-49ee-4574-9995-9ce6947ce720",
+                    "path": "<Mouse>/rightButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard",
+                    "action": "RightArm",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "e8ae5424-dff3-4b40-b434-624d77a21421",
                     "path": "<Gamepad>/leftTrigger",
                     "interactions": "",
                     "processors": "",
                     "groups": "Gamepad",
+                    "action": "LeftArm",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b18d118f-dfa9-481a-a14e-8dd5b8ee587c",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard",
                     "action": "LeftArm",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -163,6 +196,11 @@
             "devices": [
                 {
                     "devicePath": "<Keyboard>",
+                    "isOptional": false,
+                    "isOR": false
+                },
+                {
+                    "devicePath": "<Mouse>",
                     "isOptional": false,
                     "isOR": false
                 }
