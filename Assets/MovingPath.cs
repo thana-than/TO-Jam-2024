@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using UnityEngine;
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
 
 public class MovingPath : MonoBehaviour
 {
@@ -25,6 +28,10 @@ public class MovingPath : MonoBehaviour
 
     public async void Refresh()
     {
+#if UNITY_EDITOR
+        if (gameObject.scene.name == null)
+            return;
+#endif
         await Task.Delay(1);
         RefreshArray();
         UpdatePosition();
