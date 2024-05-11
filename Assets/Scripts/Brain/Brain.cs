@@ -21,13 +21,13 @@ namespace Than.Input
 
 
 
-        public BoolInput GetLimbInput(Limb.Part limbActionButton)
+        public BoolInput GetLimbInput(Joint.Part limbActionButton)
         {
             switch (limbActionButton)
             {
-                case Limb.Part.LeftArm:
+                case Joint.Part.LeftArm:
                     return LeftArm;
-                case Limb.Part.RightArm:
+                case Joint.Part.RightArm:
                     return RightArm;
             }
 

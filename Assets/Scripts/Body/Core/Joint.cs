@@ -4,7 +4,7 @@ using UnityEngine;
 using Than.Input;
 using System;
 
-public class Limb : MonoBehaviour
+public class Joint : MonoBehaviour
 {
     public Brain brain;
     public enum Part { LeftArm = -1, RightArm = 1 }
@@ -12,7 +12,8 @@ public class Limb : MonoBehaviour
 
     Brain.BoolInput input;
 
-    public Action<bool> interaction;
+    public Action<bool> input_action;
+    public bool input_value => input.value;
 
     void OnEnable()
     {
@@ -27,6 +28,6 @@ public class Limb : MonoBehaviour
 
     private void OnLimbAction(bool action)
     {
-        interaction?.Invoke(action);
+        this.input_action?.Invoke(action);
     }
 }
