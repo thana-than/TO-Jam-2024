@@ -24,18 +24,18 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "Interact",
+                    "name": "RightArm",
                     "type": "Button",
-                    "id": "55ddcb65-1a57-4c54-ab8c-d2c2cdbd36b8",
+                    "id": "a27d6658-d5f4-42ab-830c-d8fc7c61353e",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Throw",
+                    "name": "LeftArm",
                     "type": "Button",
-                    "id": "9bf45615-e046-4a62-ab72-cc6d476ff24e",
+                    "id": "b6af9ddc-b82b-4d08-928a-cd1a65c0e344",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -122,23 +122,23 @@
                 },
                 {
                     "name": "",
-                    "id": "ae59cf43-25a2-41a0-b45c-f9327ac2c054",
-                    "path": "<Gamepad>/buttonEast",
+                    "id": "a3e564a6-4bbf-41f3-82c7-e624edd27cfd",
+                    "path": "<Gamepad>/rightTrigger",
                     "interactions": "",
                     "processors": "",
                     "groups": "Gamepad",
-                    "action": "Interact",
+                    "action": "RightArm",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "",
-                    "id": "8a55f9a7-2cc3-4d01-aa44-2c7ad1fd165c",
-                    "path": "<Gamepad>/rightTrigger",
+                    "id": "e8ae5424-dff3-4b40-b434-624d77a21421",
+                    "path": "<Gamepad>/leftTrigger",
                     "interactions": "",
                     "processors": "",
                     "groups": "Gamepad",
-                    "action": "Throw",
+                    "action": "LeftArm",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

@@ -16,8 +16,23 @@ namespace Than.Input
         public Vector2Input Move { get; protected set; } = new Vector2Input("Move");
         public Vector2Input Look { get; protected set; } = new Vector2Input("Look");
 
-        public BoolInput Interact { get; protected set; } = new BoolInput("Interact");
-        public BoolInput Throw { get; protected set; } = new BoolInput("Throw");
+        public BoolInput LeftArm { get; protected set; } = new BoolInput("LeftArm");
+        public BoolInput RightArm { get; protected set; } = new BoolInput("RightArm");
+
+
+
+        public BoolInput GetLimbInput(Limb.Part limbActionButton)
+        {
+            switch (limbActionButton)
+            {
+                case Limb.Part.LeftArm:
+                    return LeftArm;
+                case Limb.Part.RightArm:
+                    return RightArm;
+            }
+
+            return RightArm;
+        }
 
 
         #endregion
