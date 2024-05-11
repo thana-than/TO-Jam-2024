@@ -516,8 +516,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   brain: {fileID: 6506018907571611139}
   rb: {fileID: 2869872449288275258}
+  walkSpeed: 1000
+  walkSpeedClamp: 3
   left_limb: 0
-  right_limb: 0
+  right_limb: 2
 --- !u!114 &7979833079719545531
 MonoBehaviour:
   m_ObjectHideFlags: 0

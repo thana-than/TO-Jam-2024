@@ -10,9 +10,8 @@ public class LimbGrip : Limb
 
     void Start()
     {
-        jointToBody.autoConfigureConnectedAnchor = true;
+        jointToBody.connectedAnchor = joint.transform.localPosition;
         jointToBody.connectedBody = thorax.rb;
-        jointToBody.autoConfigureConnectedAnchor = false;
     }
 
     protected override void OnLimbAction(bool active)
