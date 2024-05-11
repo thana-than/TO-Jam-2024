@@ -11,6 +11,8 @@ public class Joint : MonoBehaviour
     public enum Part { LeftArm = -1, RightArm = 1 }
     public Part part;
 
+    public Vector2 Axis_Multiplier => new Vector2(Mathf.Sign((int)part), 1);
+
 
     Brain.BoolInput input;
 

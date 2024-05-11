@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "TO Jam 2024.sln"
+    "dotnet.defaultSolution": "TO-Jam-2024.sln"
 }

@@ -12,6 +12,8 @@ public class LimbExpander : EvaluatedLimb
     [SerializeField] Vector2 on_offset = Vector2.zero;
     [SerializeField] Vector2 on_size = Vector2.one;
 
+    public float force_direction_amplifier = 50;
+    public float force_surface_amplifier = 50;
 
     protected override void LimbFixedUpdate(float evaluation)
     {
@@ -26,6 +28,13 @@ public class LimbExpander : EvaluatedLimb
         Vector2 size = Vector2.Lerp(off_size, on_size, evalTime);
         Vector2 offset = Vector2.Lerp(off_offset, on_offset, evalTime);
         return (offset, size);
+    }
+
+
+    private void OnCollisionStay2D(Collision2D other)
+    {
+        body.rb.AddForce(transform.right * -joint.Axis_Multiplier.x * force_direction_amplifier);
+        body.rb.AddForce(other.contacts[0].normal * force_surface_amplifier);
     }
 
     void OnDrawGizmosSelected()
