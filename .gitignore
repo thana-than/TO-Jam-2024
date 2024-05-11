@@ -52,6 +52,7 @@ ExportedObj/
 *.mdb
 *.opendb
 *.VC.db
+*.DS_Store
 
 #Addressable Content States
 *addressables_content_state.bin
