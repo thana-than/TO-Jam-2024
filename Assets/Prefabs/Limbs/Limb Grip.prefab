@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 4592039616314096792}
   - component: {fileID: 3485316263557130397}
   - component: {fileID: 1585121812907986232}
+  - component: {fileID: 4317815020716916466}
   m_Layer: 7
   m_Name: Limb Grip
   m_TagString: Untagged
@@ -216,6 +217,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   invert: 0
+  type: 2
   jointToBody: {fileID: 4592039616314096792}
   grabbyJoint: {fileID: 1585121812907986232}
   radius: 0.5
@@ -304,3 +306,16 @@ HingeJoint2D:
   m_AngleLimits:
     m_LowerAngle: 0
     m_UpperAngle: 359
+--- !u!114 &4317815020716916466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7489333239170993152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 370222a0a6ceb834f8873ca339ba042a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 2

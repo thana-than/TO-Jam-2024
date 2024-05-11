@@ -20,10 +20,10 @@ public class Thorax : MonoBehaviour
 
     void Update()
     {
-        if (brain.Move.value == Vector2.zero)
+        if (brain.Look.value == Vector2.zero)
             return;
 
-        rotation = Mathf.Clamp(brain.Move.value.ToDeg(), transform.parent.rotation.z - rotationLock, transform.parent.rotation.z + rotationLock);
+        rotation = Mathf.Clamp(brain.Look.value.ToDeg(), transform.parent.rotation.z - rotationLock, transform.parent.rotation.z + rotationLock);
         transform.rotation = Quaternion.Euler(new Vector3(0, 0, rotation + offset));
     }
 }
