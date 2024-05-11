@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      IgorTorsoHead_0: 1220923840109732955
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

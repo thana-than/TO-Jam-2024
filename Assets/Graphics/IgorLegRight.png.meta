@@ -154,7 +154,9 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      IgorLegRight_0: 333673455694060111
+      IgorLegRight_1: -658561984657821833
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
