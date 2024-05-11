@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2097004563866498045}
   - component: {fileID: 8193320147613218811}
   - component: {fileID: 7794133493975038013}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Limb Expander
   m_TagString: Untagged
   m_Icon: {fileID: 0}

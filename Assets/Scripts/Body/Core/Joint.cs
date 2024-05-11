@@ -6,9 +6,11 @@ using System;
 
 public class Joint : MonoBehaviour
 {
-    public Brain brain;
+    public Body body;
+
     public enum Part { LeftArm = -1, RightArm = 1 }
     public Part part;
+
 
     Brain.BoolInput input;
 
@@ -17,7 +19,7 @@ public class Joint : MonoBehaviour
 
     void OnEnable()
     {
-        input = brain.GetLimbInput(part);
+        input = body.brain.GetLimbInput(part);
         input.onHeldChange += OnLimbAction;
     }
 
