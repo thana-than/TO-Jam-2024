@@ -154,7 +154,9 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      trapeze_0: -6124550228466060137
+      trapeze_1: -7674181529109306971
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
