@@ -7,11 +7,21 @@ public abstract class Limb : MonoBehaviour
     protected Thorax thorax => joint.thorax;
     public bool invert = false;
 
+    [SerializeField] bool allowActionOutsideOfPlay = false;
+    bool init = false;
+
+    public enum Type
+    {
+        expando,
+        wing,
+        grip
+    }
+
     public bool Active
     {
         get
         {
-            if (!Application.isPlaying)
+            if (!Application.isPlaying || !init)
                 return invert;
             return joint.input_value ^ invert;
         }
@@ -20,11 +30,19 @@ public abstract class Limb : MonoBehaviour
     protected virtual void OnValidate()
     {
         joint = GetComponentInParent<Joint>();
+
+        if (allowActionOutsideOfPlay)
+            OnLimbAction(Active);
+    }
+
+    void Awake()
+    {
+        joint = GetComponentInParent<Joint>();
+        init = true;
     }
 
     protected virtual void OnEnable()
     {
-        joint = GetComponentInParent<Joint>();
         joint.input_action += PerformAction;
     }
 

@@ -18,12 +18,12 @@ public class Thorax : MonoBehaviour
         rb.centerOfMass = Vector2.zero;
     }
 
-    void Update()
+    void FixedUpdate()
     {
-        if (brain.Move.value == Vector2.zero)
+        if (brain.Look.value == Vector2.zero)
             return;
 
-        rotation = Mathf.Clamp(brain.Move.value.ToDeg(), transform.parent.rotation.z - rotationLock, transform.parent.rotation.z + rotationLock);
-        transform.rotation = Quaternion.Euler(new Vector3(0, 0, rotation + offset));
+        rotation = Mathf.Clamp(brain.Look.value.ToDeg(), body.rb.rotation - rotationLock, body.rb.rotation + rotationLock);
+        rb.rotation = rotation + offset;
     }
 }

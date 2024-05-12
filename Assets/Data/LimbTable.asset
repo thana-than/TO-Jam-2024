@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0e2b4dcc5f87dd47977a5ddd2e2a260, type: 3}
+  m_Name: LimbTable
+  m_EditorClassIdentifier: 
+  _limbs:
+  - {fileID: 6532586731418396382, guid: aa6ff884c640ef04d8b469ee76f40a21, type: 3}
+  - {fileID: 4317815020716916466, guid: 6312acd58df9ff34fa6de6d959c1f09a, type: 3}
+  - {fileID: -1837228095069862500, guid: a40db6d4334ddfe45be566ffb6cfe2e9, type: 3}

@@ -23,6 +23,7 @@ public abstract class EvaluatedLimb : Limb
         {
             time_percent = Active.ToInt();
             evaluation = evaluationCurve.Evaluate(time_percent);
+            LimbUpdate(evaluation);
             LimbFixedUpdate(evaluation);
         }
     }
