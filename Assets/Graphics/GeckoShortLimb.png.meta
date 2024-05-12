@@ -178,7 +178,10 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      GeckoShortLimb_0: -7293930829974934268
+      GeckoShortLimb_1: -5649969393731710615
+      GeckoShortLimb_2: -2505904498634710928
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
