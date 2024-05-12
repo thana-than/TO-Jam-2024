@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      LionCageBackground_0: -7552208119884156285
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
