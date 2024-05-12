@@ -1,16 +1,10 @@
 fileFormatVersion: 2
-guid: 4926a23301259fb4ebbfccd9e9309a02
+guid: b58f3bd2affd1c74fad4f1f6f4780f84
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -15056097725527025
-    second: Untitled_Artwork-5_0
-  - first:
-      213: 295027247320573565
-    second: Untitled_Artwork-5_1
-  - first:
-      213: -3549685520240317566
-    second: Untitled_Artwork-5_2
+      213: -3181438773050836323
+    second: Untitled_Artwork-8_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -52,12 +46,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 275
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -106,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Untitled_Artwork-5_0
+      name: Untitled_Artwork-8_0
       rect:
         serializedVersion: 2
-        x: 30
-        y: 526
-        width: 9
-        height: 29
+        x: 0
+        y: 0
+        width: 2388
+        height: 1668
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -120,50 +114,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f0ccd531f828acff0800000000000000
-      internalID: -15056097725527025
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Untitled_Artwork-5_1
-      rect:
-        serializedVersion: 2
-        x: 31
-        y: 554
-        width: 6
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d76aa93e7b5281400800000000000000
-      internalID: 295027247320573565
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Untitled_Artwork-5_2
-      rect:
-        serializedVersion: 2
-        x: 45
-        y: 20
-        width: 892
-        height: 765
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 28b6abd83dbfcbec0800000000000000
-      internalID: -3549685520240317566
+      spriteID: d9a76a9ba4249d3d0800000000000000
+      internalID: -3181438773050836323
       vertices: []
       indices: 
       edges: []
@@ -171,17 +123,14 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      Untitled_Artwork-5_0: -15056097725527025
-      Untitled_Artwork-5_1: 295027247320573565
-      Untitled_Artwork-5_2: -3549685520240317566
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
