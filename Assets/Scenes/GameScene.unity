@@ -686,6 +686,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3844658943007591024, guid: 6b50e003bc5f31b40968143338d167e1,
+        type: 3}
+      propertyPath: left_limb
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3844658943007591024, guid: 6b50e003bc5f31b40968143338d167e1,
+        type: 3}
+      propertyPath: right_limb
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 5593910525640698025, guid: 6b50e003bc5f31b40968143338d167e1,
         type: 3}
       propertyPath: m_Name
@@ -742,7 +752,8 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 7619576645967763048, guid: 6b50e003bc5f31b40968143338d167e1, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6b50e003bc5f31b40968143338d167e1, type: 3}
@@ -871,11 +882,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3926304942519233242, guid: 98c3ed8fb27d43d459ccf8123430f7b4,
-        type: 3}
-      propertyPath: orthographic size
-      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7804435102479477803, guid: 98c3ed8fb27d43d459ccf8123430f7b4,
         type: 3}
