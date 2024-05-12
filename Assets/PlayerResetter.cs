@@ -9,7 +9,6 @@ public class PlayerResetter : MonoBehaviour
 {
     Body player;
     Vector3 spawnPos;
-    PlayerInput playerInput;
 
     Controls controls;
 
@@ -46,6 +45,7 @@ public class PlayerResetter : MonoBehaviour
     {
         player.gameObject.SetActive(true);
         player.rb.velocity = Vector2.zero;
+        player.transform.rotation = Quaternion.identity;
         player.transform.position = spawnPos;
     }
 }
