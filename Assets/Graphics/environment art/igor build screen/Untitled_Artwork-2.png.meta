@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 64f673005c65e9d4a9a21720b1ad99b4
+guid: 2d4cb62f88236ad4fb6121fcb9f032eb
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -226,7 +226,12 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Untitled_Artwork-2_0: 4009355068965086491
+      Untitled_Artwork-2_1: 9164470949493444347
+      Untitled_Artwork-2_2: 6038123453281767082
+      Untitled_Artwork-2_3: -321295469198708714
+      Untitled_Artwork-2_4: -2429987022054117929
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: fc1f82e30b8be1843ba7b5183cf87609
+guid: 88a4f9f776717fa49985b30f9d340475
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -298,7 +298,15 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      SharkFinHead_0: 6801346969151303396
+      SharkFinHead_1: -7047504471882947472
+      SharkFinHead_2: 5082783309912223600
+      SharkFinHead_3: -5728274848834718712
+      SharkFinHead_4: -3985000264047972627
+      SharkFinHead_5: -4300891008445530972
+      SharkFinHead_6: -3366940584364233887
+      SharkFinHead_7: -326863412622358621
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
