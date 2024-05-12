@@ -14,7 +14,8 @@ public abstract class Limb : MonoBehaviour
     {
         expando,
         wing,
-        grip
+        grip,
+        normal
     }
 
     public bool Active
