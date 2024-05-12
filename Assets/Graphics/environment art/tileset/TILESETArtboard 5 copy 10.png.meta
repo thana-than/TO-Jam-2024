@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      TILESETArtboard 5 copy 10_0: -6549961061413755017
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
