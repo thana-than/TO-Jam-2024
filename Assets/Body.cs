@@ -27,6 +27,11 @@ public class Body : MonoBehaviour
         onLimbChanged?.Invoke();
     }
 
+    public void LimbsChanged()
+    {
+        onLimbChanged?.Invoke();
+    }
+
     void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.yellow;
