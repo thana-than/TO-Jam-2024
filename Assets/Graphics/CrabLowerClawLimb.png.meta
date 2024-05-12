@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      CrabLowerClawLimb_0: -5703553047680177906
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      TophatTwirl2Head_0: 6230253325910553582
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
